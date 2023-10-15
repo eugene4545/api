@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600&display=swap');
+:root{
+--primary: #bc4123;
+--secondary: #2b3452;
+}
+/* html */
+*{
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+ul.card{
+  margin: 0, auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* title */
+strong {
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2{
+  background-color: rgb(82, 82, 219);
+  color: black;
+  padding-bottom: 60px;
+  margin-bottom: -16px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+/* card */
+
+.card{
+  
+  background: rgb(82, 82, 219);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li>*{
+  padding: 10px;
 }
+.cardbox{
+  display: block;
+  padding: 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  border-radius: 8px !important;
+}
+
+.cardbox:hover strong{
+  color: var(--primary);
+}
+
+.cardbox div{
+  margin: 0;
+  color: #bbb;
+}
+
+
+
+div{
+  background-color: rgba(0,0,0,0.2);
+  
+}
+
+.begining{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.end{
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 30px;
+}
+
+.end p{
+  font-size: 14px;
+}
+
+
+
+.cardbox:hover p{
+  color: var(--primary);
+}
+
+.cardbox> div:last-child{
+  font-size: 0.8em;
+  color: #bbb;
+  
+}
+
+
